@@ -1,0 +1,53 @@
+<div class="ct_login_header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ct_login_logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="ct_login_main">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 d-lg-block d-none">
+                <div class="ct_login_left_content">
+                    <h2 class="mb-3">Secure Admin Access</h2>
+                    <p class="ct_fs_18 ct_text_op_6">Log in to manage platform activity while respecting end-to-end
+                        privacy standards.</p>
+                    <img src="img/login_shape.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="ct_login_form_wrapper ct_box_shadow_1">
+                    <h3 class="mb-2 ct_fs_32 text-center">Forgot Password</h3>
+                    <p class="ct_fs_14 ct_text_clr_96A0AD text-center">Don’t worry it happens, please enter the email
+                        associated with your account.</p>
+                    <form [formGroup]="Form" class="mt-5">
+                        <div class="form-group mb-3">
+                            <label for="email" class="mb-2 d-block">Email</label>
+                            <input type="email" class="form-control ct_input" id="email" placeholder="Enter your email"
+                                formControlName="email">
+                            <div *ngIf="Form.controls['email'].invalid && Form.controls['email'].touched"
+                                class="err_msg">
+                                <div *ngIf="Form.controls['email'].errors?.['required']" class="ct_fs_14 mt-1">
+                                    Email is required.
+                                </div>
+                                <div *ngIf="Form.controls['email'].errors?.['email'] && !Form.controls['email'].errors?.['required']"
+                                    class="ct_fs_14 mt-1">
+                                    Invalid email format.</div>
+                            </div>
+                        </div>
+                        <div routerLink="/verify-otp" class="ct_mt_30">
+                            <a class="ct_black_btn w-100">Send OTP</a>
+                        </div>
+                        <p class="text-center  mt-2"><span class="ct_text_op_6">Already Know Your Password?</span> <a
+                                routerLink="/" class="ct_text_cyan">Sign In</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

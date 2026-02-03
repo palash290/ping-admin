@@ -1,0 +1,143 @@
+<div class="ct_inner_header_bg mt-4 ct_px_30">
+    <h4 class="ct_fs_24 ct_fw_600 mb-0 ct_black_text">User management</h4>
+</div>
+
+<div class="ct_px_30 mt-4 pb-4">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-flex align-items-center justify-content-between gap-3 ct_flex_col_575">
+                    <div class="position-relative ct_w_100_575 ct_flex_1 w-100">
+                        <input type="search" class="form-control ct_input ct_input_ps_40 ct_h_44" placeholder="Search">
+                        <i class="fa-solid fa-search ct_input_icon_left"></i>
+
+                    </div>
+                    <div class="ct_w_100_575">
+                        <select class="form-control ct_input ct_h_44 ct_w_100_575">
+                            <option selected>Sort by: Newest</option>
+                            <option>Sort by: Oldest</option>
+                            <option>Sort by: Active</option>
+                            <option>Sort by: Inactive</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-responsive mt-3 ct_custom_table">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>User profile</th>
+                                <th>Username</th>
+                                <th>Phone No.</th>
+                                <th>Date Joined</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <img src="img/no_pro.png" alt="" class="ct_img_40 ct_cursor_pointer"
+                                        data-bs-toggle="modal" data-bs-target="#full_view_img">
+                                </td>
+                                <td>Miles Esther</td>
+                                <td>6578364578</td>
+                                <td>8 Sep, 2020</td>
+                                <td>
+                                    <span class="ct_badge"
+                                        style="background-color: #00FF001A; color: #168EA2;">Active</span>
+                                </td>
+                                <td>
+
+                                    <!-- <a [routerLink]="['/home/view-lifestyle']"
+                                        [queryParams]="{blog_id : item.blog_id}"><img src="img/icons/eye.png"
+                                            alt=""></a> -->
+
+                                    <a routerLink="/home/view-user">
+                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.4999 5.625C7.37544 5.625 3.97232 10.3882 2.76294 12.5055C2.51432 12.9397 2.39057 13.158 2.40294 13.482C2.41757 13.806 2.56382 14.0175 2.85519 14.4405C4.29519 16.5307 8.20569 21.375 13.4999 21.375C18.7942 21.375 22.7047 16.5307 24.1447 14.4405C24.4372 14.0175 24.5834 13.806 24.5958 13.482C24.6082 13.158 24.4856 12.9397 24.2369 12.5055C23.0287 10.3882 19.6244 5.625 13.4999 5.625Z"
+                                                stroke="#3A96FF" stroke-width="1.4" />
+                                            <path
+                                                d="M13.5 16.875C15.364 16.875 16.875 15.364 16.875 13.5C16.875 11.636 15.364 10.125 13.5 10.125C11.636 10.125 10.125 11.636 10.125 13.5C10.125 15.364 11.636 16.875 13.5 16.875Z"
+                                                stroke="#3A96FF" stroke-width="1.4" />
+                                        </svg>
+
+                                    </a>
+                                </td>
+
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <img src="img/no_pro.png" alt="" class="ct_img_40 ct_cursor_pointer"
+                                        data-bs-toggle="modal" data-bs-target="#full_view_img">
+                                </td>
+                                <td>Miles Esther</td>
+                                <td>6578364578</td>
+                                <td>8 Sep, 2020</td>
+                                <td>
+                                    <span class="ct_badge"
+                                        style="background-color: #00FF001A; color: #168EA2;">Active</span>
+                                </td>
+                                <td>
+                                    <a href="user-details.html">
+                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.4999 5.625C7.37544 5.625 3.97232 10.3882 2.76294 12.5055C2.51432 12.9397 2.39057 13.158 2.40294 13.482C2.41757 13.806 2.56382 14.0175 2.85519 14.4405C4.29519 16.5307 8.20569 21.375 13.4999 21.375C18.7942 21.375 22.7047 16.5307 24.1447 14.4405C24.4372 14.0175 24.5834 13.806 24.5958 13.482C24.6082 13.158 24.4856 12.9397 24.2369 12.5055C23.0287 10.3882 19.6244 5.625 13.4999 5.625Z"
+                                                stroke="#3A96FF" stroke-width="1.4" />
+                                            <path
+                                                d="M13.5 16.875C15.364 16.875 16.875 15.364 16.875 13.5C16.875 11.636 15.364 10.125 13.5 10.125C11.636 10.125 10.125 11.636 10.125 13.5C10.125 15.364 11.636 16.875 13.5 16.875Z"
+                                                stroke="#3A96FF" stroke-width="1.4" />
+                                        </svg>
+
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <img src="img/no_pro.png" alt="" class="ct_img_40 ct_cursor_pointer"
+                                        data-bs-toggle="modal" data-bs-target="#full_view_img">
+                                </td>
+                                <td>Miles Esther</td>
+                                <td>6578364578</td>
+                                <td>8 Sep, 2020</td>
+                                <td>
+                                    <span class="ct_badge"
+                                        style="background-color: #6670851A; color: #667085;">Inactive</span>
+                                </td>
+                                <td>
+                                    <a href="user-details.html">
+                                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.4999 5.625C7.37544 5.625 3.97232 10.3882 2.76294 12.5055C2.51432 12.9397 2.39057 13.158 2.40294 13.482C2.41757 13.806 2.56382 14.0175 2.85519 14.4405C4.29519 16.5307 8.20569 21.375 13.4999 21.375C18.7942 21.375 22.7047 16.5307 24.1447 14.4405C24.4372 14.0175 24.5834 13.806 24.5958 13.482C24.6082 13.158 24.4856 12.9397 24.2369 12.5055C23.0287 10.3882 19.6244 5.625 13.4999 5.625Z"
+                                                stroke="#3A96FF" stroke-width="1.4" />
+                                            <path
+                                                d="M13.5 16.875C15.364 16.875 16.875 15.364 16.875 13.5C16.875 11.636 15.364 10.125 13.5 10.125C11.636 10.125 10.125 11.636 10.125 13.5C10.125 15.364 11.636 16.875 13.5 16.875Z"
+                                                stroke="#3A96FF" stroke-width="1.4" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- <div class="col-md-12">
+                    <div class="ct_no_recod_found_bg" *ngIf="filteredData?.length == 0">
+                        <p class="text-center mb-0 ct_fs_20">No data found</p>
+                    </div>
+                </div>
+                <pagination-controls class="ct_pagination_div" *ngIf="!(propertyList?.length == 0)"
+                    (pageChange)="p = $event"></pagination-controls> -->
+            </div>
+        </div>
+    </div>
+</div>
